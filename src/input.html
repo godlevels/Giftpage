@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Gift Page</title>
+</head>
+<body class="text-gray-600">
+  <div class="grid md:grid-cols-3"> <!--Content wrapper-->
+      <div class="md:col-span-1 md:flex md:justify-end"> <!--Nav bar-->
+          <nav class="text-right">
+              <div class="flex justify-between items-center">
+                  <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                      <a href="#" class="hover:text-gray-700">Gifts Plug</a>
+                  </h1>
+
+                 <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                 </div>
+              </div>
+              <ul class="text-sm mt-6 hidden md:block" id="menu">
+                <li class="text-gray- font-bold py-1">
+                    <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
+                        <span>Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    </a>
+                </li>
+                <li class="py-1">
+                    <a href="about.html" target="_blank" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>About</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </a>
+                </li>
+                <li class="py-1">
+                    <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                        <span>Contact</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2"> <!--main content-->
+        <div class="flex justify-center md:justify-end">
+            <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Login</a>
+            <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign Up</a>
+        </div>
+
+        <header>
+            <h2 class="text-gray-700 text-6xl font-semibold">Gifts</h2>
+            <h3 class="text-2xl font-semibold">For your loved ones</h3>
+        </header>
+
+        <div>
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Gifts</h4>
+
+            <div class="mt-8 grid lg:grid-cols-3 gap-10" id="cards"> <!--Cards go here-->
+                <div class="card hover:shadow-lg">
+                    <img src="https://media.istockphoto.com/photos/black-gift-box-on-dark-background-picture-id1305295981?b=1&k=20&m=1305295981&s=170667a&w=0&h=6I1NvyTKmx7Mr4TNqzx79QU7cgV80G01fChB7QnqFtw=" alt="" class="w-full h-32 sm:h-48 object-cover hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300">
+                    <div class="m-4">
+                        <span class="font-bold">5 Bean Chilli Stew</span>
+                        <span class="block text-gray-500 text-sm">Recipes by Mario</span>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-lg">
+                    <img src="https://media.istockphoto.com/photos/valentines-day-background-with-red-hearts-and-gift-box-on-pink-with-picture-id1350210567?b=1&k=20&m=1350210567&s=170667a&w=0&h=G3_hVjqBvShPWhmN8dGcDt99-ksQNtZ2v_qo29Srrro=" alt="" class="w-full h-32 sm:h-48 object-cover hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300">
+                    <div class="m-4">
+                        <span class="font-bold">5 Bean Chilli Stew</span>
+                        <span class="block text-gray-500 text-sm">Recipes by Mario</span>
+                    </div>
+                </div>
+
+                <div class="card hover:shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1480732149909-d4e710a0f81c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8MTU4NTkzMHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="" class="w-full h-32 sm:h-48 object-cover hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300">
+                    <div class="m-4">
+                        <span class="font-bold">Beef and Fruit</span>
+                        <span class="block text-gray-500 text-sm">Recipes by Mario</span>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Popular Gifts</h4>
+
+            <div class="mt-8"> <!--Cards go here-->
+                
+            </div>
+
+            <div class="text-center">
+                <button class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300" id="loading">Load more</button>
+            </div>
+        </div>
+      </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
